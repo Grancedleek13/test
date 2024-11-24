@@ -1,0 +1,7 @@
+FROM openjdk:11-jdk-slim
+
+WORKDIR /Main
+
+COPY target/microservice-2.jar /Main/microservice-2.jar
+
+ENTRYPOINT ["java", "-jar", "microservice-2.jar"]
