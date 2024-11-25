@@ -9,7 +9,7 @@ services:
 
   microservice-1:
     build:
-      context: ./Microservis1/
+      context: ./Microservis1
     container_name: microservice-1
     ports:
       - "8081:8081"
@@ -31,7 +31,7 @@ services:
 
   microservice-2:
     build:
-      context: ./Microservis2/
+      context: ./Microservis2
     container_name: microservice-2
     ports:
       - "8082:8082"
@@ -43,7 +43,7 @@ services:
   
   microservice-3:
     build:
-      context: ./Microservis3/
+      context: ./Microservis3
     ports:
       - "8083:8083"
     networks:
